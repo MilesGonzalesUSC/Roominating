@@ -861,6 +861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxX: 1
   MaxY: 1
+  CanMoveCam: 0
   edgeScrollSize: 100
 --- !u!1 &1946202435
 GameObject:
