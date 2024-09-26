@@ -346,7 +346,7 @@ Camera:
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 40
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: 0
   m_CullingMask:
@@ -650,7 +650,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690950507}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
@@ -859,6 +859,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9621dbb260b25d043b180efeed5ac586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxX: 1
+  MaxY: 1
   edgeScrollSize: 100
 --- !u!1 &1946202435
 GameObject:
