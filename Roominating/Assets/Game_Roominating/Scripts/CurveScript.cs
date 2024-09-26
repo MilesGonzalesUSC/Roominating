@@ -9,11 +9,11 @@ public class CurveScript : MonoBehaviour
 	[SerializeField] private Transform pointB;
 	[SerializeField] private Transform pointC;
 	[SerializeField] private Transform pointD;
-	[SerializeField] private Transform pointAB;
-	[SerializeField] private Transform pointBC;
-	[SerializeField] private Transform pointCD;
-	[SerializeField] private Transform pointAB_BC;
-	[SerializeField] private Transform pointBC_CD;
+	//[SerializeField] private Transform pointAB;
+	//[SerializeField] private Transform pointBC;
+	//[SerializeField] private Transform pointCD;
+	//[SerializeField] private Transform pointAB_BC;
+	//[SerializeField] private Transform pointBC_CD;
 	[SerializeField] private Transform pointABCD;
 	private float interpolateAmount;
 	private void Update( )
