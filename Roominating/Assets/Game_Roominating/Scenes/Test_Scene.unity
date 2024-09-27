@@ -1009,6 +1009,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3868493067771020636, guid: a65d4a5dfc810be47bdc079257940aa0,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0.004470825
+      objectReference: {fileID: 0}
+    - target: {fileID: 3868493067771020636, guid: a65d4a5dfc810be47bdc079257940aa0,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.05092621
+      objectReference: {fileID: 0}
     - target: {fileID: 4754270696905080445, guid: a65d4a5dfc810be47bdc079257940aa0,
         type: 3}
       propertyPath: m_Name

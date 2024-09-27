@@ -5,6 +5,10 @@ using UnityEngine;
 public class CurveScript : MonoBehaviour
 {
 
+	LineRenderer lineRenderer;
+
+	public Transform[] Points;
+
 	[SerializeField] private Transform pointA;
 	[SerializeField] private Transform pointB;
 	[SerializeField] private Transform pointC;
@@ -16,6 +20,10 @@ public class CurveScript : MonoBehaviour
 	//[SerializeField] private Transform pointBC_CD;
 	[SerializeField] private Transform pointABCD;
 	private float interpolateAmount;
+	private void Awake( )
+	{
+		AssignLine();
+	}
 	private void Update( )
 	{
 		interpolateAmount = (interpolateAmount + Time.deltaTime) % 1f;
@@ -48,5 +56,15 @@ public class CurveScript : MonoBehaviour
 		Vector3 bc_cd = QuadracticLerp(b,c, d, t);
 		return Vector3.Lerp(ab_bc,bc_cd,interpolateAmount);
 
+	}
+
+	private void AssignLine( )
+	{
+		lineRenderer = GetComponent<LineRenderer>();
+		lineRenderer.positionCount = Points.Length;
+		for(int i = 0; i < Points.Length; i++)
+		{
+			lineRenderer.SetPosition(i, Points[i].position);
+		}
 	}
 }
