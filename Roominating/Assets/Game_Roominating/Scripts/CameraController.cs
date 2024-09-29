@@ -1,8 +1,13 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 public class CameraController : MonoBehaviour
 {
 	Vector3 inputDir = new Vector3(0, 0, 0);
+	[Header("Maximum Camera Bounds")]
 	public float MaxX = 20f;
 	public float MaxY = 20f;
 
@@ -10,11 +15,39 @@ public class CameraController : MonoBehaviour
 
 	public int edgeScrollSize = 20;
 
-	private void Start( )
+	public int ClickMoveSpeed = 3;
+
+	private Transform ClickedTran;
+
+	private void Awake( )
 	{
 		CanMoveCam = true;
+		ClickedTran = null;
 	}
 	private void Update( )
+	{
+		MoveCamera();
+
+		if(ClickedTran != null)
+		{
+		}
+	}
+
+	
+	//Called by object that is clicked to load Scene and move camera to its position
+	public void ObjectClick(Transform tran, Scene SceneToLoad)
+	{
+		CanMoveCam = false;
+		ClickedTran = tran;
+		Vector3 MoveVec = new Vector3( tran.position.x, tran.position.y, this.transform.position.z );
+		this.transform.position = MoveVec;
+
+
+	}
+
+
+	//Controls Camera Movement
+	public void MoveCamera( )
 	{
 		if(CanMoveCam)
 		{
