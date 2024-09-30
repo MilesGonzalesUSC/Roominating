@@ -16,7 +16,6 @@ public class EventClick : MonoBehaviour , IPointerDownHandler, IPointerUpHandler
 	}
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		Debug.Log( "Clicked" );
 		SceneController.instance.NextLevel(SceneNum);
 		Debug.Log( "Clicked" );
 
