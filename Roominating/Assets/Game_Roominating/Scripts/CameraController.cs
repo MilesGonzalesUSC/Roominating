@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour
 
 	public int edgeScrollSize = 20;
 
-	public int ClickMoveSpeed = 3;
+	public float ClickMoveSpeed = .5f;
 
 	private Transform ClickedTran;
 
@@ -30,6 +30,9 @@ public class CameraController : MonoBehaviour
 
 		if(ClickedTran != null)
 		{
+			Vector3 MoveVect = new Vector3(ClickedTran.position.x, ClickedTran.position.y, this.transform.position.z);
+			this.transform.position = Vector3.MoveTowards(MoveVect, this.transform.position, Time.deltaTime * ClickMoveSpeed);
+			
 		}
 	}
 
@@ -40,7 +43,7 @@ public class CameraController : MonoBehaviour
 		CanMoveCam = false;
 		ClickedTran = tran;
 		Vector3 MoveVec = new Vector3( tran.position.x, tran.position.y, this.transform.position.z );
-		this.transform.position = MoveVec;
+		//this.transform.position = MoveVec;
 
 
 	}
