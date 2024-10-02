@@ -23,4 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game_Roominating/Scenes/TooManyShowUp_Scene.unity
     guid: 4cd75662b4785418d9e4ab3fc46744f6
+  - enabled: 1
+    path: Assets/Game_Roominating/Scenes/PeopleHateIt_Scene.unity
+    guid: bf25dd88fb9ac4500885f051527ec745
+  - enabled: 1
+    path: Assets/Game_Roominating/Scenes/FindLove_Scene.unity
+    guid: 243afb43434de4ef495f637cfb926175
   m_configObjects: {}
