@@ -19,10 +19,15 @@ public class CameraController : MonoBehaviour
 
 	private Transform ClickedTran;
 
+	private Vector3 Pos;
+
 	private void Awake( )
 	{
+		Pos = GameObject.FindGameObjectWithTag("").transform.position;
 		CanMoveCam = true;
 		ClickedTran = null;
+		this.transform.position = Pos;
+
 	}
 	private void Update( )
 	{
@@ -84,7 +89,9 @@ public class CameraController : MonoBehaviour
 
 		float moveSpeed = 10f;
 		transform.position += inputDir * moveSpeed * Time.deltaTime;
+	}
 
-
+	public void MoveCam( Vector3 Pos ) {
+		this.transform.position = Pos;
 	}
 }

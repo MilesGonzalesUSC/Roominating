@@ -7,6 +7,8 @@ public class SceneController : MonoBehaviour
 {
 	public static SceneController instance;
 	[SerializeField] Animator transitionAnim;
+	private Vector3 CurretCamPos;
+	private GameObject Cam;
 
 	private void Awake( )
 	{
@@ -19,17 +21,18 @@ public class SceneController : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-	public void NextLevel(int Scene)
+	public void NextLevel(int Scene, Vector3 CamPos)
 	{
-		StartCoroutine(LoadLevel(Scene));
+		StartCoroutine(LoadLevel(Scene,CamPos));
 	}
 
 	public void BackToMainMenu( ) {
 		StartCoroutine( MainMenu() );
 	}
 
-	IEnumerator LoadLevel(int Scene)
+	IEnumerator LoadLevel(int Scene, Vector3 CamPos)
 	{
+		CurretCamPos = CamPos;
 		transitionAnim.SetTrigger( "End" );
 		yield return new WaitForSeconds(1.5f);
 		SceneManager.LoadSceneAsync(Scene);
@@ -41,6 +44,7 @@ public class SceneController : MonoBehaviour
 		transitionAnim.SetTrigger( "End" );
 		yield return new WaitForSeconds(1.5f);
 		SceneManager.LoadSceneAsync( "Test_Scene" );
+		FindObjectOfType<Camera>().GetComponent<CameraController>().MoveCam(CurretCamPos);
 		transitionAnim.SetTrigger( "Start" );
 	}
 }
