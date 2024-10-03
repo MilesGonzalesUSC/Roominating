@@ -44,7 +44,7 @@ public class SceneController : MonoBehaviour
 		transitionAnim.SetTrigger( "End" );
 		yield return new WaitForSeconds(1.5f);
 		SceneManager.LoadSceneAsync( "Test_Scene" );
-		FindObjectOfType<Camera>().GetComponent<CameraController>().MoveCam(CurretCamPos);
+		//GameObject.FindGameObjectWithTag( "MainCamera" ).GetComponent<CameraController>().MoveCam( CurretCamPos );
 		transitionAnim.SetTrigger( "Start" );
 	}
 }

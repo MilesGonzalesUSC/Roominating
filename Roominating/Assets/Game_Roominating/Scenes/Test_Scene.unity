@@ -340,6 +340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneNum: 3
+  CamPos: {x: 0, y: 0, z: 0}
 --- !u!1 &269920759
 GameObject:
   m_ObjectHideFlags: 0
@@ -613,6 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneNum: 5
+  CamPos: {x: 0, y: 0, z: 0}
 --- !u!65 &544048970
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -733,6 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneNum: 4
+  CamPos: {x: 0, y: 0, z: 0}
 --- !u!65 &654550799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -921,7 +924,7 @@ GameObject:
   - component: {fileID: 690950513}
   m_Layer: 0
   m_Name: Virtual Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1846,6 +1849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneNum: 6
+  CamPos: {x: 0, y: 0, z: 0}
 --- !u!65 &1570398027
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2177,6 +2181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneNum: 7
+  CamPos: {x: 0, y: 0, z: 0}
 --- !u!65 &2051584223
 BoxCollider:
   m_ObjectHideFlags: 0

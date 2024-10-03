@@ -23,11 +23,10 @@ public class CameraController : MonoBehaviour
 
 	private void Awake( )
 	{
-		Pos = GameObject.FindGameObjectWithTag("").transform.position;
+		Pos = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
 		CanMoveCam = true;
 		ClickedTran = null;
 		this.transform.position = Pos;
-
 	}
 	private void Update( )
 	{
