@@ -1447,7 +1447,7 @@ GameObject:
   - component: {fileID: 1108730834}
   m_Layer: 0
   m_Name: Game Manager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1481,6 +1481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 699132362}
+  CurretCamPos: {x: 0, y: 0, z: 0}
 --- !u!1 &1140102735
 GameObject:
   m_ObjectHideFlags: 0

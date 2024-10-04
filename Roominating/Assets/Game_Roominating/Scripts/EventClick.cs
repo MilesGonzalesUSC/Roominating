@@ -9,15 +9,15 @@ public class EventClick : MonoBehaviour , IPointerDownHandler, IPointerUpHandler
 {
 	public int SceneNum;
 	private GameObject Cam;
-	[SerializeField] public Vector3 CamPos;
+	[SerializeField] public Vector2 CamPos;
 
 	public void Awake( )
 	{
-		Cam = FindObjectOfType<Camera>().gameObject;
-		CamPos = Cam.transform.position;
+		Cam = GameObject.FindGameObjectWithTag("MainCamera");
 	}
 	public void OnPointerDown(PointerEventData eventData)
 	{
+		CamPos = new Vector2( Cam.transform.position.x, Cam.transform.position.y );
 		SceneController.instance.NextLevel(SceneNum, CamPos);
 		Debug.Log( "Clicked" );
 

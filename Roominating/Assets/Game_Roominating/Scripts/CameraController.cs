@@ -19,14 +19,16 @@ public class CameraController : MonoBehaviour
 
 	private Transform ClickedTran;
 
-	private Vector3 Pos;
+	private Vector2 Pos;
 
 	private void Awake( )
 	{
-		Pos = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+		
+		Pos.x = GameObject.FindGameObjectWithTag( "GameManager" ).GetComponent<SceneController>().CurretCamPos.x;
+		Pos.y = GameObject.FindGameObjectWithTag( "GameManager" ).GetComponent<SceneController>().CurretCamPos.y;
+		this.gameObject.transform.position = new Vector3( Pos.x, Pos.y, this.transform.position.z );
 		CanMoveCam = true;
 		ClickedTran = null;
-		this.transform.position = Pos;
 	}
 	private void Update( )
 	{
