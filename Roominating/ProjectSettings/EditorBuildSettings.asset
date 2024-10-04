@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game_Roominating/Scenes/FindLove_Scene.unity
     guid: 243afb43434de4ef495f637cfb926175
+  - enabled: 1
+    path: Assets/Game_Roominating/Scenes/Earthquake_Scene.unity
+    guid: d6ae60f4fa0f342cca3c3caeabced678
+  - enabled: 1
+    path: Assets/Game_Roominating/Scenes/SomeoneKillsMe_Scene.unity
+    guid: 54eee8ee75e084c279f45e591320dec0
+  - enabled: 1
+    path: Assets/Game_Roominating/Scenes/PeopleLeave_Scene.unity
+    guid: 319481563f72b463b9953aef1bd9ea38
   m_configObjects: {}
