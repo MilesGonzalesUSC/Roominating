@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 770478393903192059}
   - component: {fileID: 4618686386336592614}
   - component: {fileID: 3055688880084074272}
+  - component: {fileID: 2597526732236364692}
   m_Layer: 0
   m_Name: FaceLeftPerson
   m_TagString: Untagged
@@ -106,3 +107,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2597526732236364692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8659546539153393897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80bca0ec3b7b93249a8527c405a8d36d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
