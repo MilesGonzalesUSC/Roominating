@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a354ef0b58ed14bb9840ef054a95e4ad
+guid: 4f5753ac9353449db8e89db9e519bac2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RealCharSit1_Anim_0
+      name: CharDance2_anim_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5089911d78894e2e848099e70c4f410
-      internalID: -1995649552
+      spriteID: 16fd355218b8e4a94a5a1af5a276fcc0
+      internalID: 1192396114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RealCharSit1_Anim_1
+      name: CharDance2_anim_1
       rect:
         serializedVersion: 2
         x: 16
@@ -132,50 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5a254d1bcb42412d932966b6ede5b9e
-      internalID: -546101410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RealCharSit1_Anim_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c9330e3816854b099218e2c58d262eb
-      internalID: 1352045287
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RealCharSit1_Anim_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a601482fc3974ffca14cf6e8acb4f0e
-      internalID: 685979328
+      spriteID: cfffc5ce4030748b38ca6c0abff88f2b
+      internalID: -434113836
       vertices: []
       indices: 
       edges: []
@@ -183,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3672f843fa1e94b788dac265dda5d8c5
+    spriteID: 5932477b72c8a46cf954de1627de5c95
     internalID: 0
     vertices: []
     indices: 
@@ -191,10 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      RealCharSit1_Anim_0: -1995649552
-      RealCharSit1_Anim_1: -546101410
-      RealCharSit1_Anim_2: 1352045287
-      RealCharSit1_Anim_3: 685979328
+      CharDance2_anim_0: 1192396114
+      CharDance2_anim_1: -434113836
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

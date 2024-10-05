@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game_Roominating/Scenes/PeopleLeave_Scene.unity
     guid: 319481563f72b463b9953aef1bd9ea38
+  - enabled: 1
+    path: Assets/Game_Roominating/Scenes/PartySuccess_Scene.unity
+    guid: a876922c632734608bfbc8cb4eb4bc56
   m_configObjects: {}
