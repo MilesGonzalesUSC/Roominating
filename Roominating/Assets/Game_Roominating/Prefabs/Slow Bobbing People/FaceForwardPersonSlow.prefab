@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3055688880084074272}
   - component: {fileID: 713973020140112484}
   m_Layer: 0
-  m_Name: FaceForwardPerson
+  m_Name: FaceForwardPersonSlow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,7 +96,7 @@ Animator:
   m_GameObject: {fileID: 8659546539153393897}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4a0df383cf69c784e9367fa69ebdc4cc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 97f171990fa6e884288fa1a52f90f567, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
