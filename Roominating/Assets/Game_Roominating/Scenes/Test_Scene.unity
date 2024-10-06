@@ -1585,7 +1585,7 @@ MonoBehaviour:
   MaxX: 15
   MaxY: 15
   CanMoveCam: 0
-  edgeScrollSize: 20
+  edgeScrollSize: 400
   ClickMoveSpeed: 0.5
 --- !u!114 &690950513
 MonoBehaviour:
@@ -2468,12 +2468,12 @@ PrefabInstance:
     - target: {fileID: 2986940437481806190, guid: a65d4a5dfc810be47bdc079257940aa0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.005
+      value: 0.084
       objectReference: {fileID: 0}
     - target: {fileID: 2986940437481806190, guid: a65d4a5dfc810be47bdc079257940aa0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.151
+      value: -1.003
       objectReference: {fileID: 0}
     - target: {fileID: 3445094559858423498, guid: a65d4a5dfc810be47bdc079257940aa0,
         type: 3}
